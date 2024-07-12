@@ -4,6 +4,16 @@
 
 Задание направлено на изучение принципов построения кастомного UI-kit, по его завершению вы получите небольшую переиспользуемую библиотеку копонентов для React.
 
+## Стек:
+
+- React
+- Typescript
+- Vite
+- CSCC
+- JSDok
+- Jest
+- React-testing-library
+
 ## Требования к реализуемым компонентам:
 
 - Запрещено использовать любые сторонние библиотеки, все что доступно для использования можно посмотреть в `package.json` в разделе `devDependencies` и `dependencies`
@@ -32,11 +42,18 @@
 
 - [ ] Git Flow соблюдается, ветки и коммиты соответствуют всем правилам
 - [ ] Компонент Dropdown реализован и соответствует вышеописанным требованиям
+- [ ] Покрыть компонент Dropdown unit тестами
 - [ ] Компонент Accordion реализован и соответствует вышеописанным требованиям
+- [ ] Покрыть компонент Accordion unit тестами
 - [ ] Компонент Modal реализован и соответствует вышеописанным требованиям
+- [ ] Покрыть компонент Modal unit тестами
 - [ ] Компонент Notification реализован и соответствует вышеописанным требованиям
+- [ ] Покрыть компонент Notification unit тестами
 - [ ] Компонент Switch реализован и соответствует вышеописанным требованиям
+- [ ] Покрыть компонент Switch unit тестами
 - [ ] Компонент Table реализован и соответствует вышеописанным требованиям
+- [ ] Покрыть компонент Table unit тестами
+
 - [ ] PullRequest из `feat/components` в `develop` создан
 - [ ] Code Review проведено разработчиком лично
 - [ ] Code Review проведено куратором (выделяется техническим лидером)
@@ -47,3 +64,4 @@
 - <a href="https://www.figma.com/design/iMWtPrqpXaxvKxaCR7DQA4/UI-KIT-(Community)?node-id=135-797&t=i2c5FD1W6wkUGm1S-1">_Link to Designe_</a>
 - GitFlow ( <a href='https://www.atlassian.com/ru/git/tutorials/comparing-workflows/gitflow-workflow'>Variant #1</a> )
 - CheckList для React CodeReview <a href="https://gist.github.com/podkuyko/03334d1fb3cfee50df22fd55c80530c7">Link</a>
+- Основы тестирвоания React <a href="https://ru.legacy.reactjs.org/docs/testing.html">Link</a>
