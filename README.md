@@ -63,5 +63,5 @@
 
 - <a href="https://www.figma.com/design/iMWtPrqpXaxvKxaCR7DQA4/UI-KIT-(Community)?node-id=135-797&t=i2c5FD1W6wkUGm1S-1">_Link to Designe_</a>
 - GitFlow ( <a href='https://www.atlassian.com/ru/git/tutorials/comparing-workflows/gitflow-workflow'>Variant #1</a> )
-- CheckList для React CodeReview <a href="https://gist.github.com/podkuyko/03334d1fb3cfee50df22fd55c80530c7">Link</a>
+- CheckList для React CodeReview <a href="https://gist.github.com/dmitry-podkyuko/fac0a01ca2b2679b5a86bb8c563ce56d">Link</a>
 - Основы тестирвоания React <a href="https://ru.legacy.reactjs.org/docs/testing.html">Link</a>
