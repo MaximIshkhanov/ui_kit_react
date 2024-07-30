@@ -8,8 +8,8 @@
 
 - React
 - Typescript
-- Vite
-- CSCC
+- WebPack
+- SCSS
 - JSDok
 - Jest
 - React-testing-library

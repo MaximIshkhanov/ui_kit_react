@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     path: RoutesPath.MAIN,
     element: (
       <ul className={style.list}>
-        {...routesList.map(([_, value], __) => (
+        {routesList.map(([_, value], __) => (
           <li className={style.item}>
             <NavLink to={value}>{value.replace('/', '')}</NavLink>
           </li>
