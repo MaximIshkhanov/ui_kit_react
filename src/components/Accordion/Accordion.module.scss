@@ -1,1 +1,42 @@
-// Тут ваши стили
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.accordion {
+    border: 1px solid #ddd;
+    width: 440px; 
+  }
+  .accordionHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .accordionHeader h3 {
+    padding: 10px 0px 15px 16px;
+    margin: 0;
+    margin-right: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+  }
+  .accordionHeader span {
+    padding: 0px 16px 0px 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .accordionContent {
+    padding: 0px 15px 15px 15px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #616161;
+
+  }
+  
+  .accordionContent p {
+    margin: 0;
+  }
+  
+
