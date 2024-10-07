@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {ReactComponent as OpenIcon} from './assets/chevron-up.svg'; 
 import {ReactComponent as CloseIcon} from './assets/chevron-down.svg'; 
 import style from './Accordion.module.scss';
-
 interface AccordionProps {
   title: string;
   content: string;
