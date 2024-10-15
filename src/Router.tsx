@@ -1,7 +1,6 @@
+import React, { useState } from 'react';
 import { NavLink, RouterProvider, createBrowserRouter } from 'react-router-dom';
-
 import style from './Router.module.scss';
-
 import {
   Accordion,
   Dropdown,
@@ -23,45 +22,53 @@ export enum RoutesPath {
 
 const [_, ...routesList] = Object.entries(RoutesPath);
 
-const router = createBrowserRouter([
-  {
-    path: RoutesPath.MAIN,
-    element: (
-      <ul className={style.list}>
-        {routesList.map(([_, value], __) => (
-          <li className={style.item}>
-            <NavLink to={value}>{value.replace('/', '')}</NavLink>
-          </li>
-        ))}
-      </ul>
-    ),
-  },
-  {
-    path: RoutesPath.DROPDOWN,
-    element: <Dropdown />,
-  },
-  {
-    path: RoutesPath.MODAL,
-    element: <Modal />,
-  },
-  {
-    path: RoutesPath.NOTIFICATION,
-    element: <Notification />,
-  },
-  {
-    path: RoutesPath.SWITCH,
-    element: <Switch />,
-  },
-  {
-    path: RoutesPath.ACCORDION,
-    element: <Accordion />,
-  },
-  {
-    path: RoutesPath.TABLE,
-    element: <Table />,
-  },
-]);
+const AppRouter = () => {
+  const [selected, setSelected] = useState('Dropdown');
 
-const Router = () => <RouterProvider router={router} />;
+  const router = createBrowserRouter([
+    {
+      path: RoutesPath.MAIN,
+      element: (
+        <ul className={style.list}>
+          {routesList.map(([_, value], index) => (
+            <li key={index} className={style.item}>
+              <NavLink to={value}>{value.replace('/', '')}</NavLink>
+            </li>
+          ))}
+        </ul>
+      ),
+    },
+    {
+      path: RoutesPath.DROPDOWN,
+      element: <Dropdown selected={selected} setSelected={setSelected} />,
+    },
+    {
+      path: RoutesPath.MODAL,
+      element: <Modal />,
+    },
+    {
+      path: RoutesPath.NOTIFICATION,
+      element: <Notification />,
+    },
+    {
+      path: RoutesPath.SWITCH,
+      element: <Switch />,
+    },
+    {
+      path: RoutesPath.ACCORDION,
+      element: (
+        <Accordion title="Accordion title"
+          content="Wise men speak because they have something to say; fools because they have to say something."
+        />
+      ),
+    },
+    {
+      path: RoutesPath.TABLE,
+      element: <Table />,
+    },
+  ]);
 
-export default Router;
+  return <RouterProvider router={router} />;
+};
+
+export default AppRouter;
